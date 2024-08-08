@@ -2,7 +2,7 @@ import fs from "fs";
 import { join } from "path";
 import matter from "gray-matter";
 // @ts-expect-error module resolution can't find yml
-import authors from "./authors.yml";
+import authors from "../_data/authors.yml";
 // @ts-expect-error module resolution can't find yaml
 import conferences from "../_data/conferences.yaml";
 import Post from "../interfaces/post";

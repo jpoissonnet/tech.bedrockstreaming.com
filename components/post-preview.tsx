@@ -30,11 +30,9 @@ const PostPreview = async ({
       <div className="mb-5 overflow-hidden">
         <CoverImage slug={slug} title={title} src={coverImage} />
       </div>
-      <h3 className="text-5xl font-bold mb-3 tracking-tight">
-        <Link href={`/posts/${slug}`} className="hover:text-orange-500">
-          {title}
-        </Link>
-      </h3>
+      <Link href={`/posts/${slug}`} className="hover:text-orange-500">
+        <h3 className="text-5xl font-bold mb-3 tracking-tight">{title}</h3>
+      </Link>
       <div className="mb-4 inline-flex flex-wrap items-center gap-1 text-lg text-neutral-500">
         <Authors authors={author} />
         <span>-</span>

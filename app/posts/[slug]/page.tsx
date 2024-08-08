@@ -2,8 +2,38 @@ import PostBody from "../../../components/post-body";
 import PostHeader from "../../../components/post-header";
 import Layout from "../../../components/layout";
 import { getPostBySlug, getPostSlugs } from "../../../lib/api";
-import Head from "next/head";
 import React from "react";
+import { ResolvedMetadata } from "next";
+
+type Props = {
+  params: { slug: string };
+};
+
+export function generateMetadata({ params }: Props, parent: ResolvedMetadata) {
+  const post = getPostBySlug(params.slug, [
+    "title",
+    "date",
+    "slug",
+    "author",
+    "content",
+    "ogImage",
+    "coverImage",
+    "youtubeId",
+  ]);
+
+  const previousImages = parent.openGraph?.images || [];
+
+  return {
+    title: post.title,
+    description: post.content,
+    openGraph: {
+      type: "article",
+      title: post.title,
+      description: post.content,
+      images: [post.ogImage, ...previousImages],
+    },
+  };
+}
 
 export function generateStaticParams() {
   const pathnames = getPostSlugs();
@@ -13,7 +43,7 @@ export function generateStaticParams() {
   }));
 }
 
-export default async function Post({ params }: { params: { slug: string } }) {
+export default async function Post({ params }: Props) {
   const { slug } = params;
   const post = getPostBySlug(slug, [
     "title",
@@ -28,10 +58,6 @@ export default async function Post({ params }: { params: { slug: string } }) {
 
   return (
     <Layout>
-      <Head>
-        <title>{post.title}</title>
-        {/*<meta property="og:image" content={post.ogImage.url} />*/}
-      </Head>
       <article className="mb-32">
         <PostHeader
           title={post.title}

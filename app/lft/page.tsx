@@ -1,12 +1,16 @@
 import React from "react";
-import Head from "next/head";
 import Layout from "../../components/layout";
-import { CMS_NAME } from "../../lib/constants";
 import Link from "next/link";
 import { getLfts } from "../../lib/api";
 import Image from "next/image";
 import Authors from "../../components/authors";
 import DateFormatter from "../../components/date-formatter";
+
+export const metadata = {
+  title: "Last Friday Talks",
+  description:
+    "Last Friday Talks are internal technical conferences at the end of each month given by Bedrock employees about various subjects.",
+};
 
 const getYouTubeThumbnail = (youtubeId: string) => {
   return `https://img.youtube.com/vi/${youtubeId}/hqdefault.jpg`;
@@ -18,9 +22,6 @@ const Page = async () => {
   return (
     <>
       <Layout>
-        <Head>
-          <title>{`Next.js Blog Example with ${CMS_NAME}`}</title>
-        </Head>
         <section
           className={"bg-black text-white shadow-2xl p-[9%] font-bold text-4xl"}
           style={{ backgroundImage: "url(/images/common/banner_xl.jpg)" }}

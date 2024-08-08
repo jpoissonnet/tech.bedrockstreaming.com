@@ -1,9 +1,15 @@
 import React from "react";
 
-// @ts-ignore
+// @ts-expect-error module resolution can't find md
 import Oss from "./oss.md";
 import { components } from "../../components/mdx-components";
 import Layout from "../../components/layout";
+
+export const metadata = {
+  title: "OSS",
+  description:
+    "At Bedrock we strongly believe in open source. We push our team members to publish their work and demand the same for our contractors.",
+};
 
 const Page = () => {
   return (

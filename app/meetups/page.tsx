@@ -5,6 +5,12 @@ import { format } from "date-fns";
 import Link from "next/link";
 import Author from "../../interfaces/author";
 
+export const metadata = {
+  title: "Meetups & Conferences",
+  description:
+    "Bedrock through its actions, sponsors events in France, hosts Meetup and conferences in its auditorium. Here is a list of all the events we have been part of.",
+};
+
 export default async function Page() {
   const conferences: Conference[] = getConferences();
   const sortedConferences = conferences.sort(

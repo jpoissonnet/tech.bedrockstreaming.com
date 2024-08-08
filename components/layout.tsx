@@ -1,5 +1,4 @@
 import Footer from "./footer";
-import Meta from "./meta";
 import Navbar from "./navbar";
 
 type Props = {
@@ -10,7 +9,6 @@ type Props = {
 const Layout = ({ preview, children }: Props) => {
   return (
     <>
-      <Meta />
       <Navbar />
       <>{children}</>
       <Footer />

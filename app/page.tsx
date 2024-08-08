@@ -1,9 +1,13 @@
 import Layout from "../components/layout";
 import { getAllPosts } from "../lib/api";
-import Head from "next/head";
-import { CMS_NAME } from "../lib/constants";
 import PostPreview from "../components/post-preview";
 import Link from "next/link";
+
+export const metadata = {
+  title: "Bedrock Tech Blog",
+  description:
+    "Bedrock's blog is a place where we share our knowledge, our feedback, and our experiences. We write about technology, management, and much more.",
+};
 
 export default async function Index({
   searchParams,
@@ -29,9 +33,6 @@ export default async function Index({
   return (
     <>
       <Layout>
-        <Head>
-          <title>{`Next.js Blog Example with ${CMS_NAME}`}</title>
-        </Head>
         <section
           className={"bg-black text-white shadow-2xl p-[9%] font-bold text-4xl"}
           style={{ backgroundImage: "url(/images/common/banner_xl.jpg)" }}
