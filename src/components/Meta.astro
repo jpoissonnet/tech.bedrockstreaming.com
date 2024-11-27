@@ -8,7 +8,7 @@ interface Props {
 const {
     title = 'Bedrock Streaming Blog',
     description = 'The official blog of Bedrock Streaming',
-    imageUrl,
+    imageUrl = '/bedrock_card.png'
 } = Astro.props;
 ---
 <head>
@@ -17,14 +17,17 @@ const {
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=0.5, maximum-scale=5">
     <link rel="icon" type="image/svg+xml" href="/favicon.png"/>
     <meta property="og:type" content="website"/>
-    {!!imageUrl && <meta property="og:image" content={imageUrl}/>}
+    <meta property="og:image" content={imageUrl}/>
+    <meta property="twitter:image" content={imageUrl}/>
+    <meta property="twitter:card" content="summary_large_image"/>
     <meta name="twitter:title" content={title}/>
     <meta name="twitter:description" content={description}/>
+    <meta property="description" content={description}/>
+    <meta property="og:site_name" content="Bedrock Streaming Tech Blog"/>
     <meta name="twitter:creator" content="@Bedrock_Tech"/>
     <meta name="twitter:image:alt" content={title}/>
     <meta property='og:title' content={title}/>
     {imageUrl && <meta property='og:image' content={imageUrl}/>}
-    <meta property='og:description' content={description}/>
     <meta property='og:url' content={Astro.url}/>
     <title>{title}</title>
 
