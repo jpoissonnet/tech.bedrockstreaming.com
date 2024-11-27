@@ -1,12 +1,12 @@
 ---
-layout: post
+layout: ../../../../../layouts/post.astro
 title: We love speed 2024 ❤️
 description: Retour sur la conférence We love speed 2024 ❤️, une conférence annuelle axée sur la performance du web.
 author: [ j_nginn, j_poissonnet ]
 tags: [ performance, conference, webperf, javascript, react, web, frontend ]
 color: rgb(251,87,66)
 language: fr
-thumbnail: "images/posts/2024-10-29-we-love-speed-2024/welovespeed_2024-1709240237.jpg"
+thumbnail: "./welovespeed_2024-1709240237.jpg"
 ---
 
 Nous avons eu la chance de participer à la conférence We love speed, une conférence annuelle axée sur la
@@ -16,7 +16,7 @@ Le thème de cette édition, c’est l’INP. En effet, cette métrique de perfo
 L’objectif de cette métrique est de refléter l’expérience utilisateur en mesurant la réactivité d’une application.
 Elle observe le temps entre une action utilisateur et une réponse visuelle de notre interface.
 
-![L'équipe frontend à la we love speed](/images/posts/2024-10-29-we-love-speed-2024/team_picture.jpeg)
+![L'équipe frontend à la we love speed](./team_picture.jpeg)
 
 ## HTMX, le nouvel atout pour vos projets SSR - [Ewen Quimerc‘h](https://ewen.quimerch.com/)
 
@@ -38,7 +38,7 @@ d’ajouter par exemple l’attribut `preload` sur une balise `a` pour demander 
 navigateur.
 
 > <div style="display: flex">
-> <img src="/images/avatar/j_nginn.jpeg" alt="Julie" style="padding: 0;border-radius: 50%; height: 70px; margin: 10px">
+> <img src="../../../../authors/j_nginn.jpeg" alt="Julie" style="padding: 0;border-radius: 50%; height: 70px; margin: 10px">
 > Comme nous utilisons React pour notre application, l'utilisation de HTMX n'est pas vraiment utile.
 > Il est déjà possible avec React de précharger les ressources en avance. Mais ça reste un outil intéressant...
 > </div>
@@ -46,7 +46,7 @@ navigateur.
 > <div style="display: flex">
 > ...effectivement, HTMX semble être intéressant, mais on se retrouve à ajouter
 > beaucoup d'attributs dans le HTML. Ça peut le rendre le markup moins lisible. Et en plus, ça donne l'impression de recoder les comportements du navigateur.
-> <img src="/images/avatar/j_poissonnet.jpg" alt="Jules" style="padding: 0;border-radius: 50%; height: 70px; margin: 10px">
+> <img src="../../../../authors/j_poissonnet.jpg" alt="Jules" style="padding: 0;border-radius: 50%; height: 70px; margin: 10px">
 > </div>
 
 ## React / Next vs INP - [Jean-Pierre Vincent](https://www.linkedin.com/in/jeanpierrevincent/)
@@ -56,7 +56,7 @@ qui a audité les performances du web de Bedrock, il y a deux ans.
 Lors de ce talk, Jean-Pierre nous a donné la feuille de route pour éviter au mieux la déferlante de Javascript que vos
 utilisateurs reçoivent au chargement de votre site.
 
-![JS Tsunami storming your users](/images/posts/2024-10-29-we-love-speed-2024/js_tsunami.jpeg)
+![JS Tsunami storming your users](./js_tsunami.jpeg)
 
 L'INP (Interaction to Next Paint) est une métrique qui mesure le temps entre une interaction utilisateur et le prochain
 rendu du navigateur. L’idée générale est de pouvoir mesurer l’incapacité du navigateur à réagir. Après avoir récupéré
@@ -70,7 +70,7 @@ L’INP est une métrique qui peut être influencée par des interactions qui ne
 on a été étonnés de constater que lorsque les temps de chargement sont un poil trop longs à leur goût, les utilisateurs
 se mettent à cliquer partout 🤷 C’est pourquoi il est important de se baser sur des données réelles.
 
-![INP est bousculé par la charge de js!](/images/posts/2024-10-29-we-love-speed-2024/inp_charge.jpeg)
+![INP est bousculé par la charge de js!](./inp_charge.jpeg)
 
 Parmi les bonnes pratiques qu’on peut appliquer dès maintenant, et qui je dois le dire m’a paru un peu contre-intuitif :
 faire passer Babel sur les node_modules.
@@ -99,7 +99,7 @@ du rendu, le rendant donc plus long. FYI : Entre temps, nous avons chez Bedrock
 Styled-Components au profit de [Linaria](https://linaria.dev/) pour le projet web
 et [Vanilla Extract](https://vanilla-extract.style/) pour le projet smart TV.
 
-![Flamegraph du Footer de Bedrock](/images/posts/2024-10-29-we-love-speed-2024/flamgraph.jpeg)
+![Flamegraph du Footer de Bedrock](./flamgraph.jpeg)
 
 Autre information qui nous concerne chez Bedrock, au moment d’écrire ces lignes, nous sommes en train de mettre en
 production la migration de React 17 vers React 18 sur le projet web.
@@ -110,7 +110,7 @@ Enfin, Jean-Pierre nous laisse avec un ultime conseil pour que nos applications 
 moins une fois dans ta vie) l’origine des INP avec un vrai utilisateur.”
 
 > <div style="display: flex">
-> <img src="/images/avatar/j_nginn.jpeg" alt="Julie" style="padding: 0;border-radius: 50%; height: 70px; margin: 10px">
+> <img src="..//j_nginn.jpeg" alt="Julie" style="padding: 0;border-radius: 50%; height: 70px; margin: 10px">
 > J'ai bien aimé ce talk ! J'ai trouvé que sa présentation était très accessible, il a su vulgariser des concepts et rendre un sujet fastidieux (la performance) intéressant 👏
 > </div>
 
@@ -137,10 +137,10 @@ applications web, dans une CI. Cela permet de détecter les problèmes de perfor
 production. Il est possible de mettre des warnings, voire des erreurs empêchant de merger, si l’application ne respecte
 pas les standards que nous nous sommes fixés. L'idée est de s'assurer que la performance de
 notre application web est toujours au top et ne se dégrade pas dans le temps.
-![Key takeaways from the talk](/images/posts/2024-10-29-we-love-speed-2024/Key%20Takeaways.jpeg)
+![Key takeaways from the talk](./Key%20Takeaways.jpeg)
 
 > <div style="display: flex">
-> <img src="/images/avatar/j_nginn.jpeg" alt="Julie" style="padding: 0;border-radius: 50%; height: 70px; margin: 10px">
+> <img src="..//j_nginn.jpeg" alt="Julie" style="padding: 0;border-radius: 50%; height: 70px; margin: 10px">
 > On envisage de l'ajouter au projet smart TV, mais plus pour générer un rapport de performance quotidien plutôt que de le faire pour chaque push ou merge. 
 > </div>
 
@@ -163,7 +163,7 @@ faire son travail plutôt que de vouloir le contrôler. L'attribut `preload` est
 pour aider le navigateur à charger les ressources de manière plus efficace. Il faut cependant l'utiliser avec parcimonie
 et de manière chirurgicale pour ne pas interférer avec le travail du navigateur.
 
-![Preload with surgical precision](/images/posts/2024-10-29-we-love-speed-2024/preload_surgical.jpeg)
+![Preload with surgical precision](./preload_surgical.jpeg)
 
 ## Mais que fait la police ? - [Eroan Boyer](https://x.com/eroan)
 
@@ -178,10 +178,10 @@ comme : [Font Subsetter](https://everythingfonts.com/subsetter), [fontTools](ht
 [Glyphanger](https://www.zachleat.com/web/glyphhanger/).
 > <div style="display: flex">
 > Attention à ne pas abuser des subsets, car cela peut entraîner des problèmes de lisibilité du texte. Le fameux t🠉fu .
-> <img src="/images/avatar/j_poissonnet.jpg" alt="Jules" style="padding: 0;border-radius: 50%; height: 70px; margin: 10px">
+> <img src="..//j_poissonnet.jpg" alt="Jules" style="padding: 0;border-radius: 50%; height: 70px; margin: 10px">
 > </div>
 
-![Say no to tofu](/images/posts/2024-10-29-we-love-speed-2024/tofu.jpeg)
+![Say no to tofu](./tofu.jpeg)
 
 Il est aussi possible de minimiser le nombre de fichiers en utilisant des polices variables. Un bon exemple est la
 police Roboto Flex, qui est customisable et permet ainsi de pouvoir réduire le nombre de fichiers nécessaires à charger.

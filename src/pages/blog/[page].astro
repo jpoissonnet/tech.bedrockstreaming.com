@@ -6,14 +6,26 @@ import Navbar from "../../components/Navbar.astro";
 import Post from "../../components/Post.astro";
 import Meta from "../../components/Meta.astro";
 
+interface Props {
+    page: {
+        data: Array<any>,
+        url: {
+            prev: string,
+            next: string
+        },
+        currentPage: number,
+        total: number
+    }
+}
+
 const authors = await getCollection('authors');
-export async function getStaticPaths({ paginate }) {
+export async function getStaticPaths({ paginate }: { paginate: (data: Array<any>,options: any) => {page: any} }) {
     const posts = (await getCollection('posts')).toReversed();
     return paginate(posts, {
         pageSize: 9
     });
 }
-const { page } = Astro.props;
+const { page }  = Astro.props;
 const posts = page.data;
 ---
 <html lang="en">

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: ../../../../../layouts/post.astro
 title: Using Fastly's Compute at-edge to personalize static pre-generated pages
 description: How we used Fastly's Compute at-edge and KVStore to personalize static pre-generated pages, during UEFA Euro 2024.
 author: [p_martin]
@@ -244,7 +244,7 @@ Doing those load-tests and analyzing their results with our contacts at Fastly h
 
 During these load-tests as well as during real events later, we monitored a few basic metrics: number of calls per second, CPU and RAM usage, latency and error-rate.
 
-![](/images/posts/2024-11-compute-at-edge/compute-at-edge-monitoring-fastly-censored.png)
+![](./compute-at-edge-monitoring-fastly-censored.png)
 
 <center><ins><strong>Schema 6: monitoring Fastly’s Compute during a load-test.</strong></ins></center>
 
@@ -254,7 +254,7 @@ The high number of requests-per second we reached during our load-tests proved F
 
 On our backend’s application side, we also checked the number of calls per second was going down while it was going up on Compute at-edge. In practice, it went down to 0 for the `/live/` route, and remained stable or even went up for other routes, as there were more users browsing the catalog.
 
-![](/images/posts/2024-11-compute-at-edge/compute-at-edge-monitoring-backends-censored.png)
+![](./compute-at-edge-monitoring-backends-censored.png)
 
 <center><ins><strong>Schema 7: Backend (Kubernetes) and Fastly Compute for /live/, before and during a match.</strong></ins></center>
 

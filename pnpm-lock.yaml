@@ -11,6 +11,9 @@ importers:
       '@astrojs/check':
         specifier: ^0.9.4
         version: 0.9.4(typescript@5.6.3)
+      '@astrojs/ts-plugin':
+        specifier: ^1.10.4
+        version: 1.10.4
       astro:
         specifier: ^4.16.5
         version: 4.16.5(@types/node@20.12.14)(rollup@4.24.0)(typescript@5.6.3)
@@ -24,6 +27,9 @@ importers:
       astro-pagefind:
         specifier: ^1.6.0
         version: 1.6.0(astro@4.16.5(@types/node@20.12.14)(rollup@4.24.0)(typescript@5.6.3))
+      sharp:
+        specifier: ^0.33.5
+        version: 0.33.5
 
 packages:
 
@@ -66,8 +72,14 @@ packages:
     resolution: {integrity: sha512-/ca/+D8MIKEC8/A9cSaPUqQNZm+Es/ZinRv0ZAzvu2ios7POQSsVD+VOj7/hypWNsNM3T7RpfgNq7H2TU1KEHA==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=21.0.0}
 
+  '@astrojs/ts-plugin@1.10.4':
+    resolution: {integrity: sha512-rapryQINgv5VLZF884R/wmgX3mM9eH1PC/I3kkPV9rP6lEWrRN1YClF3bGcDHFrf8EtTLc0Wqxne1Uetpevozg==}
+
   '@astrojs/yaml2ts@0.2.1':
     resolution: {integrity: sha512-CBaNwDQJz20E5WxzQh4thLVfhB3JEEGz72wRA+oJp6fQR37QLAqXZJU0mHC+yqMOQ6oj0GfRPJrz6hjf+zm6zA==}
+
+  '@astrojs/yaml2ts@0.2.2':
+    resolution: {integrity: sha512-GOfvSr5Nqy2z5XiwqTouBBpy5FyI6DEe+/g/Mk5am9SjILN1S5fOEvYK0GuWHg98yS/dobP4m8qyqw/URW35fQ==}
 
   '@babel/code-frame@7.25.7':
     resolution: {integrity: sha512-0xZJFNE5XMpENsgfHYTw8FbX4kv53mFLn2i3XPoq69LyhYSCBJtitaHx9QnsVTrsogI4Z3+HtEfZ2/GFPOtf5g==}
@@ -642,6 +654,9 @@ packages:
     peerDependencies:
       typescript: '*'
 
+  '@volar/language-core@2.4.10':
+    resolution: {integrity: sha512-hG3Z13+nJmGaT+fnQzAkS0hjJRa2FCeqZt6Bd+oGNhUkQ+mTFsDETg5rqUTxyzIh5pSOGY7FHCWUS8G82AzLCA==}
+
   '@volar/language-core@2.4.6':
     resolution: {integrity: sha512-FxUfxaB8sCqvY46YjyAAV6c3mMIq/NWQMVvJ+uS4yxr1KzOvyg61gAuOnNvgCvO4TZ7HcLExBEsWcDu4+K4E8A==}
 
@@ -651,8 +666,14 @@ packages:
   '@volar/language-service@2.4.6':
     resolution: {integrity: sha512-wNeEVBgBKgpP1MfMYPrgTf1K8nhOGEh3ac0+9n6ECyk2N03+j0pWCpQ2i99mRWT/POvo1PgizDmYFH8S67bZOA==}
 
+  '@volar/source-map@2.4.10':
+    resolution: {integrity: sha512-OCV+b5ihV0RF3A7vEvNyHPi4G4kFa6ukPmyVocmqm5QzOd8r5yAtiNvaPEjl8dNvgC/lj4JPryeeHLdXd62rWA==}
+
   '@volar/source-map@2.4.6':
     resolution: {integrity: sha512-Nsh7UW2ruK+uURIPzjJgF0YRGP5CX9nQHypA2OMqdM2FKy7rh+uv3XgPnWPw30JADbKvZ5HuBzG4gSbVDYVtiw==}
+
+  '@volar/typescript@2.4.10':
+    resolution: {integrity: sha512-F8ZtBMhSXyYKuBfGpYwqA5rsONnOwAVvjyE7KPYJ7wgZqo2roASqNWUnianOomJX5u1cxeRooHV59N0PhvEOgw==}
 
   '@volar/typescript@2.4.6':
     resolution: {integrity: sha512-NMIrA7y5OOqddL9VtngPWYmdQU03htNKFtAYidbYfWA0TOhyGVd9tfcP4TsLWQ+RBWDZCbBqsr8xzU0ZOxYTCQ==}
@@ -1986,7 +2007,21 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
+  '@astrojs/ts-plugin@1.10.4':
+    dependencies:
+      '@astrojs/compiler': 2.10.3
+      '@astrojs/yaml2ts': 0.2.2
+      '@jridgewell/sourcemap-codec': 1.5.0
+      '@volar/language-core': 2.4.10
+      '@volar/typescript': 2.4.10
+      semver: 7.6.3
+      vscode-languageserver-textdocument: 1.0.12
+
   '@astrojs/yaml2ts@0.2.1':
+    dependencies:
+      yaml: 2.6.0
+
+  '@astrojs/yaml2ts@0.2.2':
     dependencies:
       yaml: 2.6.0
 
@@ -2490,6 +2525,10 @@ snapshots:
       vscode-languageserver-textdocument: 1.0.12
       vscode-uri: 3.0.8
 
+  '@volar/language-core@2.4.10':
+    dependencies:
+      '@volar/source-map': 2.4.10
+
   '@volar/language-core@2.4.6':
     dependencies:
       '@volar/source-map': 2.4.6
@@ -2513,7 +2552,15 @@ snapshots:
       vscode-languageserver-textdocument: 1.0.12
       vscode-uri: 3.0.8
 
+  '@volar/source-map@2.4.10': {}
+
   '@volar/source-map@2.4.6': {}
+
+  '@volar/typescript@2.4.10':
+    dependencies:
+      '@volar/language-core': 2.4.10
+      path-browserify: 1.0.1
+      vscode-uri: 3.0.8
 
   '@volar/typescript@2.4.6':
     dependencies:
@@ -2740,13 +2787,11 @@ snapshots:
     dependencies:
       color-name: 1.1.4
       simple-swizzle: 0.2.2
-    optional: true
 
   color@4.2.3:
     dependencies:
       color-convert: 2.0.1
       color-string: 1.9.1
-    optional: true
 
   comma-separated-tokens@2.0.3: {}
 
@@ -2770,8 +2815,7 @@ snapshots:
 
   dequal@2.0.3: {}
 
-  detect-libc@2.0.3:
-    optional: true
+  detect-libc@2.0.3: {}
 
   deterministic-object-hash@2.0.2:
     dependencies:
@@ -3009,8 +3053,7 @@ snapshots:
 
   import-meta-resolve@4.1.0: {}
 
-  is-arrayish@0.3.2:
-    optional: true
+  is-arrayish@0.3.2: {}
 
   is-docker@3.0.0: {}
 
@@ -3712,7 +3755,6 @@ snapshots:
       '@img/sharp-wasm32': 0.33.5
       '@img/sharp-win32-ia32': 0.33.5
       '@img/sharp-win32-x64': 0.33.5
-    optional: true
 
   shiki@1.22.0:
     dependencies:
@@ -3728,7 +3770,6 @@ snapshots:
   simple-swizzle@0.2.2:
     dependencies:
       is-arrayish: 0.3.2
-    optional: true
 
   sirv@2.0.4:
     dependencies:
