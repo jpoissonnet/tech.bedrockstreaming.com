@@ -1,0 +1,58 @@
+---
+interface Props {
+    backgroundImage?: string;
+}
+const { backgroundImage } = Astro.props;
+---
+<header>
+    <div class="content">
+        <slot/>
+    </div>
+</header>
+
+<style define:vars={{backgroundImage}}>
+    header {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: white;
+        height: 400px;
+        margin: -60px calc(calc(100vw - 100%) * -0.5) 0 calc(calc(100vw - 100%) * -0.5);
+        background-size: cover;
+        background-image: var(--backgroundImage, linear-gradient(to right, var(--color-scarlet), var(--color-ink)));
+        z-index: -1;
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            margin: 0 auto;
+            height: 100%;
+            gap: 10px;
+            max-width: 1140px;
+            padding: 74px 15px 20px 15px;
+            @media (min-width: 768px) {
+                gap: 20px;
+            }
+        }
+
+        h1 {
+            font-size: 3rem;
+            text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+            @media (min-width: 768px) {
+                font-size: 4rem;
+            }
+        }
+        p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+
+            @media (min-width: 768px) {
+                font-size: 1.4rem;
+            }
+        }
+    }
+</style>

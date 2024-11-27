@@ -1,0 +1,194 @@
+---
+import '../styles/global.css'
+import {format} from "date-fns";
+import {getCollection} from "astro:content";
+import Authors from "../components/Authors.astro";
+import Header from "../components/Header.astro";
+import Navbar from "../components/Navbar.astro";
+import VideoCard from '../components/VideoCard.astro';
+import Meta from "../components/Meta.astro";
+
+const conferences = await getCollection('conferences');
+const authors = await getCollection('authors');
+
+const formatConferenceDate = (date: string) => format(new Date(date), "dd/MM");
+const getYearFromId = (id: string) => +id.slice(0, 4);
+const getDateKey = (id: string) => format(id.slice(0, 10), "MMMM dd");
+
+const sortedConferences = conferences.sort((a, b) => {
+    const dateA = a.data.title.slice(0, 10);
+    const dateB = b.data.title.slice(0, 10);
+    return dateA.localeCompare(dateB);
+});
+
+const groupedConferences = sortedConferences.reduce(
+    (acc, conference) => {
+        const year = getYearFromId(conference.id);
+        const dateKey = getDateKey(conference.id);
+        const eventKey = conference.data.eventName || "";
+
+        acc[year] = acc[year] || {};
+        acc[year][dateKey] = acc[year][dateKey] || {};
+        acc[year][dateKey][eventKey] = acc[year][dateKey][eventKey] || [];
+        acc[year][dateKey][eventKey].push(conference);
+
+        return acc;
+    },
+    {} as Record<number, Record<string, Record<string, typeof conferences>>>
+);
+---
+
+<html lang="en">
+<Meta title="Meetups & Conferences" description="Bedrock through its actions and events, hosts Meetup and conferences which are opportunities for Bedrock members to give conferences in France or abroad."/>
+<body>
+<Navbar/>
+<main>
+    <Header backgroundImage="linear-gradient(to right, var(--color-fuschia), var(--color-scarlet))">
+        <h1>Meetups & Conferences</h1>
+        <p>
+            Bedrock through its actions and events, hosts Meetup
+            and conferences which are opportunities for Bedrock members
+            to give conferences in France or abroad.
+        </p>
+    </Header>
+
+    <section class="intro">
+        <p class="legend">⭐ sponsored by Bedrock 🏠 hosted by Bedrock</p>
+    </section>
+
+    <section class="conferences">
+        {Object.entries(groupedConferences)
+            .toReversed()
+            .map(([year, yearData]) => (
+                    <div class="year-group">
+                        <h2>{year}</h2>
+                        {Object.entries(yearData).map(([dateKey, dateData]) => (
+                                <div class="date-group">
+                                    {Object.entries(dateData).map(
+                                        ([eventKey, eventConferences]) => {
+                                            const firstConf = eventConferences[0];
+                                            return (
+                                                    <div class="event-group">
+                                                        <h3 class="event-header">
+                                                            {`${formatConferenceDate(dateKey)} : ${eventKey}`}
+                                                            {firstConf.data.sponsored && " ⭐️"}
+                                                            {firstConf.data.hosted && " 🏠"}
+                                                        </h3>
+                                                        {eventConferences.map((conference) => (
+                                                                <div class="conference-item">
+                                                                    <a href={conference.data.eventUrl}>
+                                                                        <h4>{conference.data.title}</h4>
+                                                                    </a>
+                                                                    <Authors
+                                                                            authors={conference.data.author}
+                                                                            allAuthors={authors}
+                                                                    />
+                                                                </div>
+                                                        ))}
+                                                    </div>
+                                            );
+                                        }
+                                    )}
+                                </div>
+                        ))}
+                    </div>
+            ))
+        }
+    </section>
+    <section class="replays">
+        <h2>Replays</h2>
+        <ul class="video-list">
+            {
+                conferences
+                    .filter(c => !!c.data.youtubeId)
+                    .map((conference) => (
+                            <li>
+                                <VideoCard url={`/meetups/${conference.id}`} title={conference.data.title}
+                                           src={`https://img.youtube.com/vi/${conference.data.youtubeId}/hqdefault.jpg`}
+                                           authors={conference.data.author}/>
+                            </li>
+                    ))
+            }
+        </ul>
+    </section>
+</main>
+
+</body>
+</html>
+<style>
+    :root {
+        --local-primary-color: var(--color-fuschia);
+    }
+
+    main {
+        max-width: 1140px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+
+    .intro {
+        margin: 4rem 0;
+    }
+
+    .legend {
+        font-style: italic;
+    }
+
+    .conferences {
+        margin-bottom: 4rem;
+    }
+
+    .year-group h2 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin: 1rem 0;
+    }
+
+    .event-group {
+        .event-header {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin: .5rem 0;
+        }
+        margin-bottom: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+
+    .conference-item {
+        line-height: 1.4;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        margin-left: 1rem;
+
+        & a {
+            color: var(--local-primary-color);
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .replays {
+        h2 {
+            color: var(--local-primary-color);
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+    }
+
+    .video-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 2rem;
+        margin-bottom: 4rem;
+        @media (min-width: 768px) {
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        }
+    }
+</style>

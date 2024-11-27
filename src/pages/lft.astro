@@ -1,0 +1,68 @@
+---
+import '../styles/global.css';
+import {getCollection} from "astro:content";
+import Header from '../components/Header.astro';
+import Navbar from '../components/Navbar.astro';
+import VideoCard from '../components/VideoCard.astro';
+import Meta from '../components/Meta.astro';
+
+const lfts = (await getCollection('lfts')).toReversed();
+---
+<Meta title="Last Friday Talks" description="Watch the replays of our internal conferences, learn and discover as much as we do."/>
+<Navbar/>
+<main>
+    <Header>
+        <h1>Last Friday Talk</h1>
+        <p>Watch the replays of our internal conferences, learn and discover as much as we do.</p>
+    </Header>
+    <section class="description">
+        <h2>Want to know more about LFTs?</h2>
+        <p>Last friday talks were at first internal technical conferences at the end of each month given by Bedrock
+            employees about various subjects. The concept of LFT has been introduced in this article 🇫🇷.
+            Since this article, the event has evolved to include non-technical talks. Everyone can share their passion.
+            Here are some replays of LFT available on Youtube:</p>
+    </section>
+    <section class="video-list">
+        {lfts.map((lft) => (
+            <VideoCard url={`/lft/${lft.slug}`} title={lft.data.title} src={`https://img.youtube.com/vi/${lft.data.youtubeId}/hqdefault.jpg`} authors={lft.data.author}/>
+        ))}
+    </section>
+</main>
+
+<style>
+    :root {
+        --local-primary-color: var(--color-scarlet);
+    }
+    main {
+        max-width: 1140px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+
+
+    .description {
+        margin-top: -2rem;
+        margin-bottom: 1rem;
+        line-height: 1.6;
+        border-radius: 10px;
+        background-color: white;
+        padding: 2rem;
+        width: 100%;
+
+        h2 {
+            color: var(--local-primary-color);
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+    }
+
+    .video-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 2rem;
+        margin-bottom: 4rem;
+        @media (min-width: 768px) {
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        }
+    }
+</style>

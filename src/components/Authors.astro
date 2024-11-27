@@ -1,0 +1,65 @@
+---
+import type {CollectionEntry} from "astro:content";
+import ImageOrImg from "./ImageOrImg.astro";
+const {authors: givenAuthors, allAuthors} = Astro.props;
+let authors;
+if (!Array.isArray(givenAuthors)) {
+    authors = [givenAuthors];
+} else {
+    authors = givenAuthors;
+}
+
+type AuthorType = CollectionEntry<"authors">;
+---
+
+<div id="authors">
+    {
+        authors.map((author) => {
+            const authorData = allAuthors.find((a:any) => a.id === author.id) as AuthorType;
+            const authorUrl = authorData.data.url;
+            if (authorUrl) {
+                return (
+                        <a href={authorUrl}>
+                            <ImageOrImg class='author-img' image={authorData.data.avatar}
+                                        alt={`Avatar for ${authorData.data.name}`}/>
+                            <span>{authorData.data.name}</span>
+                        </a>
+                );
+            }
+            return (
+                    <div>
+                        <ImageOrImg class='author-img' image={authorData.data.avatar}
+                                    alt={`Avatar for ${authorData.data.name}`}/>
+                        <span>{authorData.data.name}</span>
+                    </div>
+            );
+        })
+    }
+</div>
+
+<style>
+    #authors {
+        display: flex;
+        flex-flow: row wrap;
+        gap: 1rem;
+    }
+
+    .author-img {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+    }
+
+    #authors span {
+        display: flex;
+        flex-flow: row wrap;
+        height: 20px;
+        align-items: center;
+    }
+
+    #authors a, #authors div {
+        display: flex;
+        gap: 0.4rem;
+        align-items: center;
+    }
+</style>
