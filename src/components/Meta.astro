@@ -1,5 +1,4 @@
 ---
-import bedrock_card from '../assets/images/bedrock_card.png';
 interface Props {
     title?: string;
     description?: string;
@@ -9,7 +8,7 @@ interface Props {
 const {
     title = 'Bedrock Streaming Blog',
     description = 'The official blog of Bedrock Streaming',
-    imageUrl = bedrock_card.src
+    imageUrl = `${Astro.url}bedrock_card.png`
 } = Astro.props;
 ---
 <head>
