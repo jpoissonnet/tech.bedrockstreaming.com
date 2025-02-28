@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: "La retrospective Agile ‘Garde à vous’"
 description: "Présentation d’un format original de Rétrospéctive Agile réalisé dans nos équipes technique"
 author: pt_guillot  

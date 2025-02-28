@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: "Genesis of M6's Datalake"
 description: "From using a market DMP to creating our second Hadoop platform"
 author: c_chaplin

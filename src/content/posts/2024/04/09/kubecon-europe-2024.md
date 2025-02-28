@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: KubeCon Europe 2024, Paris
 description: A few notes and ideas, coming back from KubeCon EU 2024 Paris.
 author: [g_sanchez, j_menan, l_caillet, p_martin, v_chabrier, v_pelus]

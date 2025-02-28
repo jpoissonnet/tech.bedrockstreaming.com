@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: "M6web sera présent au sfpot de Lille du 16/06/16"
 description: "Pierre Marichez, Renaud Bougré et Nicolas Beze y donneront une conférence sur l'industrialisation des développements chez M6Web."
 author: TechM6Web

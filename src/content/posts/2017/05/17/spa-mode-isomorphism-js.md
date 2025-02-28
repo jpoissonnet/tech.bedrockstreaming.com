@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: "Last night isomorphic JS saved our life!"
 description: "How we use isomorphism to ensure a high availability of our app."
 author: f_dubost

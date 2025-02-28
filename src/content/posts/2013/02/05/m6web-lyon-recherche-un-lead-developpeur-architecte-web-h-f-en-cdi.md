@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: "M6Web Lyon recherche un Lead Developpeur / Architecte web (H/F) en CDI"
 description: ""
 author: bedrock

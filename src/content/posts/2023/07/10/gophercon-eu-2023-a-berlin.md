@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: Bedrock à la GopherCon EU (2023)
 description: Nous étions à Berlin pour l'édition 2023 de la GopherCon EU !
 author: team_backend

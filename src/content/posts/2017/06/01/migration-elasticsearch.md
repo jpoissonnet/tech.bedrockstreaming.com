@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: "Elasticsearch: la grande migration"
 description: "Migration de Elasticsearch 1.7 à 5.2 sans interruption de service"
 author: b_viguier

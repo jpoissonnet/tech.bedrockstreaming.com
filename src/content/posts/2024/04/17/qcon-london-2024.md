@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: QCon London 2024
 description: A few notes and ideas, coming back from this QCon conference at London.
 author: [c_petit, j_foray, v_gallissot]

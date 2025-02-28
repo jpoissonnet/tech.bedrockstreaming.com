@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: "Why is Transit Gateway service not right for us?"
 description: "Transit Gateway is being promoted as the answer to a lot of network problems in AWS. But is it really a good solution?"
 author: c_vanderzwaard

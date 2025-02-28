@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: "On a testé fonctionnellement notre app JS"
 description: "Faire des tests fonctionnels avec Cucumber.js, WebdriverIO et PhantomJS sur une app JS isomorphique."
 author: f_dubost 

@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: "Composer installation without github.com (nor packagist) dependency - like a boss !"
 description: ""
 author: o_mansour

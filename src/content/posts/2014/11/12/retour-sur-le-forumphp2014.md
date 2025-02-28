@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: "Retour sur le forum PHP 2014 organisé par l'AFUP"
 description: ""
 author: Team Burton  

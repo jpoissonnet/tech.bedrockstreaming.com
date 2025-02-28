@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: "M6web fera un retour d'expérience sur l'usage de Cassandra sur 6play le 14/06/2016"
 description: "M6web fera un retour d'expérience sur l'usage de Cassandra sur 6play le 14/06/2016"
 author: TechM6Web

@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: "Retour d'expérience sur l'utilisation de Cassandra sur 6play en vidéo"
 description: "Retour d'expérience sur l'utilisation de Cassandra sur 6play en vidéo"
 author: o_mansour 

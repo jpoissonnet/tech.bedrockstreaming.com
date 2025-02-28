@@ -27,7 +27,7 @@ Make sure to complete the _frontmatter_ part of your Markdown file in order to d
 
 ```markdown
 ---
-layout: ../../../../../layouts/post.astro
+
 title: Title of your article
 description: Description of your article visible in search page results
 author: author_of_your_article 
@@ -64,7 +64,7 @@ The most different parts are:
 Here is an example of an LFT frontmatter
 ```markdown
 ---
-layout: ../../../../../layouts/video.astro
+
 title: "Le LFT du LFT - PUB LFT #LFT 02/02/24"
 description: ""
 author: team_lft

@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: "AFUP Day Lyon 2019"
 description: "Nos retours sur le PHP DAY 2019 à LYON"
 author: team_backend

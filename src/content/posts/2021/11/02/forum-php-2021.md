@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: "Forum PHP 2021 - L'édition des retrouvailles"
 description: "Nos retours du Forum PHP à Paris, les 21 et 22 octobre 2021"
 author: bedrock

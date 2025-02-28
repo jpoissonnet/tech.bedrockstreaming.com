@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: "Enquête exclusive au coeur de la technique de 6play. Les slides."
 description: "Plus d'un milliard de vidéos vues par an sur 6play - Enquête exclusive au coeur de la technique"
 author: [k_dits, o_mansour, f_jomier]

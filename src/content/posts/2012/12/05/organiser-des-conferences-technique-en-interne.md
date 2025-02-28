@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: "Organiser des conférences technique en interne"
 description: ""
 author: k_dits 

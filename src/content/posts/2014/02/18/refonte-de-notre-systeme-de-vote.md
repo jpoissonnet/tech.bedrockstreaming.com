@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: "Refonte de notre système de vote"
 description: "Création d'un nouveau service de vote communiquant avec une API REST"
 author: d_roussel

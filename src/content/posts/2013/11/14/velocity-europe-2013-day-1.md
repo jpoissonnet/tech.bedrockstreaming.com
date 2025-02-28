@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: "Velocity Europe 2013 - Day 1"
 description: ""
 author: [b_candellier, d_roussel, k_dits]

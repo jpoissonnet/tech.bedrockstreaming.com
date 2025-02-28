@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: "Nos retours sur l'HAProxyConf Paris 2022"
 description: "Retour sur la virée de Bedrock à l'HAProxyconf Paris 2022, et ce que nous en retenons"
 author: bedrock

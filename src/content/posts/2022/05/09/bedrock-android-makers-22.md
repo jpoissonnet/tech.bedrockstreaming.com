@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: Retour sur l'Android Makers 2022
 description: Notre équipe de développeurs Android était à l'Android Makers 2022 !
 author: r_panoyan

@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: "Streaming recommendations at Bedrock"
 description: "The first streaming recommendations with machine learning at Bedrock"
 author: n_saby

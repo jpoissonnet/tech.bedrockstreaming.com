@@ -24,14 +24,14 @@ const authors = await getCollection('authors');
     </Header>
     <section id="hero">
         <div class="main-post">
-            <a class="img-holder" href={`/${posts[0].slug}`}>
+            <a class="img-holder" href={`/${posts[0].id}`}>
                 <ImageOrImg image={posts[0].data.thumbnail} alt={`${posts[0].data.title}`} loading="eager"/>
             </a>
             <div class="main-post-info">
                 <div class="upper-part">
-                    <span class="date">{format(posts[0].slug.slice(0, 10), 'MMMM dd, yyyy')}</span>
+                    <span class="date">{format(posts[0].id.slice(0, 10), 'MMMM dd, yyyy')}</span>
                     <hr/>
-                    <h2><a href={`/${posts[0].slug}`}>{posts[0].data.title}</a></h2>
+                    <h2><a href={`/${posts[0].id}`}>{posts[0].data.title}</a></h2>
                     <p>{posts[0].data.description}</p>
                 </div>
                 <Authors authors={posts[0].data.author} allAuthors={authors}/>

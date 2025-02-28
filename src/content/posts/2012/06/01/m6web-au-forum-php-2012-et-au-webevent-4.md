@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: "M6Web au Forum PHP 2012 et au WebEvent #4"
 description: ""
 author: k_dits

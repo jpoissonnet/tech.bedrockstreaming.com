@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: Bedrock GopherCon Berlin 2024
 description: The 2024 GopherCon Europe took place in Berlin. Four of us had the opportunity to take part in the event in-person while others could attend the talks virtually.
 author: [k_phan, m_millet, n_boiron, pa_bedu, t_geindre, y_chauvel]

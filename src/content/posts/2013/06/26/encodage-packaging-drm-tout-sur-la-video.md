@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: "Encodage - packaging - DRM - tout sur la vidéo"
 description: ""
 author: o_noel 

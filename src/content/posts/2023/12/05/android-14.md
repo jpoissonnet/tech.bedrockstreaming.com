@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: Android 14 is out
 description: "Android 14 changes impacts"
 author: [c_goffoy]

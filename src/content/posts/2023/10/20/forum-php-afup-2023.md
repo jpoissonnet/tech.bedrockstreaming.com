@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: "Bedrock au Forum PHP 2023"
 description: "Nos retours du Forum PHP à Paris, les 12 et 13 octobre 2023"
 author: team_backend

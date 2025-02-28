@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: "M6Web sera présent au PHPTour Lyon 2014"
 description: "M6Web sera présent au PHPTour Lyon 2014 organisé par l'AFUP"
 author: M6Web

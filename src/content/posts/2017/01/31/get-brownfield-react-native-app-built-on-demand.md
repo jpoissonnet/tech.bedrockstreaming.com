@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: "Get your brownfield React Native app built on demand"
 description: "Get your brownfield React Native app built on demand"
 author: k_dits 

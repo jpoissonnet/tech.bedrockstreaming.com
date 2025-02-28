@@ -1,5 +1,5 @@
 ---
- layout: ../../../../../layouts/post.astro
+ 
  title: Ce que nous avons retenu de la SymfonyCon - Disneyland Paris 2022
  description: "Nos retours de la SymfonyCon à Paris, les 17 et 18 novembre 2022"
  author: bedrock

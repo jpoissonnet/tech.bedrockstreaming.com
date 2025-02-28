@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: Swift Concurrency in a Nutshell
 description: This article offers an overview of Swift's Concurrency, detailing its main features and principles.
 author: d_petrilli 

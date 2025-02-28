@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: "Increase performance and stability by adding an Egress Controller in a Kubernetes cluster at AWS"
 description: "How to avoid ErrorPortAllocation on AWS NAT Gateways, with PHP applications, at scale"
 author: t_falconnet

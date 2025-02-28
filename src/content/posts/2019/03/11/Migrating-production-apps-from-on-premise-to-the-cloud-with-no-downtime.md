@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: "Migrating production applications from on-premise to the cloud with no downtime"
 description: "How did we proceed, what lessons we learned and what tools we used"
 author: v_gallissot

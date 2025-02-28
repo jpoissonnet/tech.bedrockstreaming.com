@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: "More efficient Load Balancing and Caching at AWS, using Consistent Hashing and HAProxy"
 description: "Why and how, we implement consistent hashing based load balancing at AWS with HSDO"
 author: t_falconnet

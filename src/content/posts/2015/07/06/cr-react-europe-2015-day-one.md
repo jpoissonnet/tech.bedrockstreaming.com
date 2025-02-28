@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: "CR React Europe Conférence 2015 - Day 1"
 description: "Compte rendu de la React Europe - Jour 1"
 author: [f_vieudrin, m_guillermin, f_dubost, k_dits]

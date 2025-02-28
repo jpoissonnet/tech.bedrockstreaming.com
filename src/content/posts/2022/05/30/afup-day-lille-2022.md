@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: Retour sur l'AFUP Day Lille 2022
 description: Une partie de notre équipe backend s'est rendue à l'AFUP Day Lille 2022
 author: bedrock

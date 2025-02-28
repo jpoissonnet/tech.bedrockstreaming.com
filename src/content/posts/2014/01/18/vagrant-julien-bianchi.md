@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: "Vagrant & Cie, du Dév à la Prod avec Julien Bianchi"
 description: "Vagrant, Packer, Chef ... Du dév à la prod."
 author: o_mansour

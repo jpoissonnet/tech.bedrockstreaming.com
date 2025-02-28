@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/conference.astro
+
 
 title: "Une donnée presque parfaite sur 6play"
 description: "La gestion de la mise à disposition des données sur 6play"

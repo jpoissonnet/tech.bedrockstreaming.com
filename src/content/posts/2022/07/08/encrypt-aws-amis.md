@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: "Encrypt AWS AMIs: one way to do it wrong"
 description: "By encrypting our AMIs, we wanted to overzealously increase our security. In the end, we reduced it and lost time. Here is the REX of this failure that we had to rollback."
 author: t_falconnet

@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: "Bonnes pratiques pour la maintenance d'une application web"
 description: "Comment ne pas jeter son projet au bout de 2 ans ? Retour d'expérience basé sur les bonnes pratiques appliquées à la plateforme web développée chez Bedrock Streaming."
 author: a_caron

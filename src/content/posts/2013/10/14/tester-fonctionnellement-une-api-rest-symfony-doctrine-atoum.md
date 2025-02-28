@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: "Tester fonctionnellement une API REST"
 description: ""
 author: team_cytron

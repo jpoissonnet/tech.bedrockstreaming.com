@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: "Conférence au Symfony Live 2014 : Symfony à la télé"
 description: "M6Web était présent au Symfony Live 2014"
 author: o_mansour

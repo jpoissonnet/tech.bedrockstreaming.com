@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: "Firewall applicatif PHP et bundle Symfony"
 description: ""
 author: team_cytron

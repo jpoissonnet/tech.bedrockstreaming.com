@@ -11,7 +11,7 @@ const {Content} = await render(entry);
 export async function getStaticPaths() {
     const lfts = await getCollection('lfts');
     return lfts.map((entry) => ({
-        params: {slug: entry.slug}, props: {entry},
+        params: {slug: entry.id}, props: {entry},
     }));
 }
 ---

@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: "Intégration continue avec Jenkins et Atoum"
 description: ""
 author: o_mansour

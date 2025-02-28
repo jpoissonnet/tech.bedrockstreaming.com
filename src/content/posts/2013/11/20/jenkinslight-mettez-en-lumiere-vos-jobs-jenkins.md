@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: "JenkinsLight, mettez en lumière vos jobs Jenkins"
 description: ""
 author: team_cytron

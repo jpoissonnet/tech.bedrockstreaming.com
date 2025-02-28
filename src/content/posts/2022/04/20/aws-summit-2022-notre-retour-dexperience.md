@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: Bedrock à l'AWS Summit 2022
 description: Cinq de nos DevOps, Ops et Développeurs étaient à l'AWS Summit Paris 2022, voici leur retour d'expérience.
 author: bedrock

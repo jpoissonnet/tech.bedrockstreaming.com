@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: "Best practices for Web application maintenance"
 description: "How not to throw away your project after 2 years? Feedback based on best practices applied to the web platform developed at Bedrock Streaming."
 author: a_caron

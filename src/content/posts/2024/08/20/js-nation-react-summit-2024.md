@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: JS Nation x React Summit 2024 highlights
 description: "A few notes on the combo JS Nation x React Summit Amsterdam 2024 conferences"
 author: [f_dubost, y_frommelt]

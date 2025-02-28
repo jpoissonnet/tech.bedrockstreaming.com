@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/conference.astro
+
 description: ""
 title: Atteindre les étoiles avec PHP et Symfony
 author: m_randy

@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: "Babitch, the story behind our table soccer web application"
 description: "Babitch, the story behind our table soccer/foosball web application"
 author: M6Web

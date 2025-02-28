@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: "Tentative d'explication des Fast-Forward sous Git"
 description: ""
 category: 

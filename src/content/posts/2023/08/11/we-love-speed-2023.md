@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: "Bedrock at We Love Speed 2023"
 description: We tell you all about web performance in 2023!
 author: team_frontend

@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: "A journey into connected TVs industrialisation process, Part 1"
 description: "The Launcher App"
 author: bedrock

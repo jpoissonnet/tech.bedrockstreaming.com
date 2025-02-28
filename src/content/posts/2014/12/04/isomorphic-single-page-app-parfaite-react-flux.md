@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: "App Isomorphic: la Single Page App parfaite ?"
 description: "Développer une SPA référencable et performante avec React.Js et Flux"
 author: k_dits

@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: "Simplifiez vous la vie avec les hooks Git"
 description: "Comment simplifier son quotidien de développeur Symfony2 avec nos hooks Git"
 author: m_randy

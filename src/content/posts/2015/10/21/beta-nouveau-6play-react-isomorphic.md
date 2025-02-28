@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: "La bêta du nouveau 6play est disponible"
 description: "La bêta du nouveau 6play est disponible"
 author: bedrock 

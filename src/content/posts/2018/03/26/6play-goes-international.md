@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: "The 6play platform goes international"
 description: ""
 author: bedrock

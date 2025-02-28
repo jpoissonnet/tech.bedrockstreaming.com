@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: "Ce que nous retenons de la droidcon London 2022"
 description: "Retour sur la virée de Bedrock à la droidcon London 2022, et ce que nous en retenons"
 author: [r_panoyan, d_yim, d_cuny]

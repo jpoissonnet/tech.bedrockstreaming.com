@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: "Bedrock à la kubecon 2022, 1ere partie : performances applicatives et scalabilité"
 description: "Une partie des équipes infra Bedrock étaient à la KubeCon 2022, voici leur retour d'expérience."
 author: bedrock

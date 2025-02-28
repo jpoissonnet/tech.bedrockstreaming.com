@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: "React Europe 2019"
 description: "Our feedbacks about the European React Conference 2019"
 author: [f_dubost, n_afresne, a_caron]

@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: "CR Conférence Agora Cms du 15 mai 2013"
 description: ""
 author: d_roussel 

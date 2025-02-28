@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: "Forum PHP AFUP 2017"
 description: "Retour sur le forum PHP 2017"
 author: o_mansour

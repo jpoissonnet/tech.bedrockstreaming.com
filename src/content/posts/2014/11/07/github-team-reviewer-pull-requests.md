@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: "Github Team Reviewer pour gagner la course aux Pull Requests"
 description: "Voir toutes les pull requests de ses équipes en un seul endroit"
 author: team_cytron

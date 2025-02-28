@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: "Un onboarding facilité grâce à la revue de code!"
 description: "Comment l'exercice de la revue du delta du code, souvent redouté, peut-il devenir 
 un outil d'onboarding ?"

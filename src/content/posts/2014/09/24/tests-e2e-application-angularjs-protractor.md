@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: "Tests E2E sur son application AngularJS avec Protractor"
 description: "Comment mettre en place des tests E2E sur son application AngularJS : outils et problématiques."
 author: team_cytron

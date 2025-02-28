@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: "Format all the things"
 description: "How we set up prettier for 6play"
 author: f_lepretre 

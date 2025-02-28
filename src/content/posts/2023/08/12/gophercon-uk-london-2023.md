@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: "GopherCon UK 2023 highlights"
 description: My highlights of GopherCon UK 2023
 author: pa_bedu

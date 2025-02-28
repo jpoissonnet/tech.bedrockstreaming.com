@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: "M6Web au Web Event Lyon #4"
 description: ""
 author: o_mansour

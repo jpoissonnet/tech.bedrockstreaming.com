@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: "L'envers du décor du nouveau 6play"
 description: "Présentation du backend derrière les nouvelles applications 6play"
 author: bedrock   

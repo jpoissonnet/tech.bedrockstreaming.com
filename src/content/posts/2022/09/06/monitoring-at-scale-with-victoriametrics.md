@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: Monitoring at scale with Victoria Metrics
 description: why and how we moved from Prometheus to Victoria Metrics
 author: j_menan

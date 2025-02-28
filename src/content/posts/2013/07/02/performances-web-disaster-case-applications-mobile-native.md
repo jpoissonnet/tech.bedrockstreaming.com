@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: "Performances web et \"Disaster case\" sur applications mobile native"
 description: ""
 author: k_dits 

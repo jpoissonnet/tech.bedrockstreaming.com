@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: "The organisational challenge of building a Data team: lessons learnt"
 description: "Over the past 4 years, we've scaled our Data team from 2 to 40 people. Down the road we met some unexpected challenges in the way we organised and staffed the team."
 author: c_chaplin

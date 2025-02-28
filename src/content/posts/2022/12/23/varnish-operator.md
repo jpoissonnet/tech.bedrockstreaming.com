@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: "How Micro-Services changed our caching architecture"
 description: "Varnish Operator is a good solution to problem caused by Microservices architecture in Kubernetes environment. Especially where most of the traffic comes from other API rather than from an end-user."
 author: a_zinck

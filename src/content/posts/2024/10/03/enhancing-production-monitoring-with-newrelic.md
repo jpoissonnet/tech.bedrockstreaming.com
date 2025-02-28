@@ -1,5 +1,4 @@
 ---
-layout: ../../../../../layouts/post.astro
 title: Enhancing Production Monitoring with New Relic
 description: How did we improve the monitoring practices on the mobile service? Let's find out.
 author: [m_benali, m_julieron]

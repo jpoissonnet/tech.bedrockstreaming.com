@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: "Forum PHP Paris 2018"
 description: "Nos retours du Forum PHP à Paris, les 25 et 26 octobre 2018"
 author: [o_mansour, f_desaintpern, fx_gaberan, h_hiraux, p_martin, b_viguier, g_bouyge]

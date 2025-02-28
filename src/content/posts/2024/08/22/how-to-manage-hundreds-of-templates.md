@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: How to manage hundreds of view templates?
 description: Let’s dive together into the depths of a large scale template versioning for a white label streaming application.
 author: [d_cuny, m_oudji]

@@ -15,7 +15,9 @@ type AuthorType = CollectionEntry<"authors">;
 <div id="authors">
     {
         authors.map((author) => {
-            const authorData = allAuthors.find((a:any) => a.id === author.id) as AuthorType;
+            const authorData = allAuthors.find((a:any) => {
+                return a.id.toLowerCase() === author.id.toLowerCase();
+            }) as AuthorType;
             const authorUrl = authorData.data.url;
             if (authorUrl) {
                 return (

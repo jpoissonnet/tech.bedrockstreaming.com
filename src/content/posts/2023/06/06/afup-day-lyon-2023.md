@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: Bedrock à l'AFUP Day Lyon (2023)
 description: Nous étions à l'AFUP Day à Lyon pour l'édition 2023 !
 author: team_backend

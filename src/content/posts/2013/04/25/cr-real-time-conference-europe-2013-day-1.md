@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: "CR Real Time Conférence Europe 2013 - Day 1"
 description: ""
 author: k_dits

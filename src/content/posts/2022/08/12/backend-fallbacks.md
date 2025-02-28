@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: "Handling dependencies failures in an API gateway"
 description: "How are we handling downtime from the API we are calling, and what can we do about it?"
 author: v_claras

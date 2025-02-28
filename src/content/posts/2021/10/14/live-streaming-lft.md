@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: "How did we live stream our Last Friday Talks?"
 description: "Discover how we live streamed our Last Friday Talks of September 2021 to 150+ remote employees."
 author: p_martin

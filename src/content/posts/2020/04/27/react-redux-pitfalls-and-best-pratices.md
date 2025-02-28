@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: "React/Redux: pitfalls and best practices"
 description: "We use React and Redux for almost 4 years at Bedrock on our video platform named 6play.Good practices and mistakes to be avoided have been gathered in this article."
 author: a_caron

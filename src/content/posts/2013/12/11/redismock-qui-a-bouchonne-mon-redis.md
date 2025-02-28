@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: "Qui a bouchonné mon Redis ?"
 description: "Présentation de la librairie RedisMock, un mock PHP open-source de Redis à utiliser dans vos tests fonctionnels."
 author: team_cytron

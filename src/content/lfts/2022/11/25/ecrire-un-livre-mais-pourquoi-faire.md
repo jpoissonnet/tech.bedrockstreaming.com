@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/video.astro
+
 title: "Écrire un livre, mais pourquoi faire ? #LFT 25/11/22"
 description: ""
 author: n_saby

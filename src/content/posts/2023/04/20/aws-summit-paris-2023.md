@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: Bedrock à l'AWS Summit Paris 2023
 description: Notre retour sur cette édition 2023 de l'AWS Summit Paris
 author: [p_martin, l_caillet, v_chabrier]

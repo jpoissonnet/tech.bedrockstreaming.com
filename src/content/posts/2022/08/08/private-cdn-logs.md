@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: "How to ingest 400GB of logs per hour?"
 description: "We wanted to exploit our CDN logs as they contain many valuable information."
 author: a_zinck

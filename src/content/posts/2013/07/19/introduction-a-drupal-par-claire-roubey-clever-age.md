@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: "Introduction à Drupal par Claire Roubey (Clever Age)"
 description: ""
 author: o_mansour 

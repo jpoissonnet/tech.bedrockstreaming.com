@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: "CR React Conférence 2015 - Day 2"
 description: "Compte rendu de la conférence React - Facebook HQ - Menlo Park - Day 2"
 author: k_dits

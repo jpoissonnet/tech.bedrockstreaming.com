@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: "Bedrock à la Kubecon 2022, 4ème partie : chaos, résilience, ressenti global et conclusion générale…"
 description: Une partie des équipes infra Bedrock étaient à la KubeCon 2022, voici leur retour d'expérience.
 author: bedrock

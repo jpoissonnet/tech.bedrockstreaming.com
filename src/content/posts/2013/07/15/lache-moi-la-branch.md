@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: "Lâche moi la branch !"
 description: ""
 author: team_cytron

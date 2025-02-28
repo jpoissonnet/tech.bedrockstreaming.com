@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: "L'équipe Player de 6play.fr au Paris Video Tech"
 description: "Paris Video Tech : La plus grande rencontre des ingénieurs de la vidéo à Paris"
 author: f_vieudrin 

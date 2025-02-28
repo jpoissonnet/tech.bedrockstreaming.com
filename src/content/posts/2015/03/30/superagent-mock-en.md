@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: "How did we mock the backend developers?"
 description: "Presentation of the superagent-mock library, a superagent plugin allowing to simulate HTTP calls by returning data fixtures based on the requested URL."
 author: team_cytron

@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: "Retour sur la Velocity Barcelone - troisième journée"
 description: "Retour sur la Vélocity Europe 2014 à Barcelone - Troisième journée"
 author: [b_candellier, f_verron, o_mansour]

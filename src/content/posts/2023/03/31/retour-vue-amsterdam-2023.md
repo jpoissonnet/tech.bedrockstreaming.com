@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: Retour Conférence Vue Amsterdam 2023
 description: Retour sur la conférence Vuejs à Amsterdam 2023
 author: [pl_perez, l_penaguin, c_berard]

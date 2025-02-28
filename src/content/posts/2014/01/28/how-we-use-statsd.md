@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: "How we use StatsD"
 description: "How we use statsd to monitor our applications"
 author: o_mansour

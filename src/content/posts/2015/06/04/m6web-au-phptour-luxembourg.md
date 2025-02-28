@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: "On était au PHPTour ! "
 description: "et c'était bien."
 author: [b_candellier, m_randy, o_mansour]

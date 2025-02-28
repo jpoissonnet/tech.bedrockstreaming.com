@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/conference.astro
+
 
 title: "Comment faire un trailer vidéo qui déchire avec des technos web ?"
 description: "Présentation donnée au Lyon JS n°71, pour montrer comment générer des vidéos avec Remotion"

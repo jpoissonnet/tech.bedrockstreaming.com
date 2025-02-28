@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: Bedrock au Kubernetes Community Days France 2023
 description: Notre retour sur cette édition de Kubernetes Community Days en France
 author: c_vanderzwaard

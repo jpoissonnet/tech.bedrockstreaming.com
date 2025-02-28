@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: "Comment appliquer automatiquement des modifications sur une codebase JS 🤖"
 description: "Ou comment j'ai appris à ne plus m'en faire et à aimer JSCodeshift"
 author: m_schneider

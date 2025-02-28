@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: "Les spikes : quand, comment, pour quoi faire ?"
 description: "Décomposer une tâche complexe, de A à Z"
 author: e_doyon

@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: "CR Velocity Conférence Europe 2012 : Day 2"
 description: ""
 author: k_dits

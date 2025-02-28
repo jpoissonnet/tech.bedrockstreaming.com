@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: "Mix-IT 2015 - Jour 2"
 description: "Retour des conférences vues lors du jour 2 du Mix-IT 2015"
 author: m_randy

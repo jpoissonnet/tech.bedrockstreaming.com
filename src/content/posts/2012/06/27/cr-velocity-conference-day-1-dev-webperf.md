@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: "CR Velocity Conference 2012 : Day 1 (Dev/Webperf)"
 description: ""
 author: k_dits 

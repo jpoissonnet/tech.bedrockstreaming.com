@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: "Vigo, le fléau des Carpates"
 description: ""
 author: team_cytron

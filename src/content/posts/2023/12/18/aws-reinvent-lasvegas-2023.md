@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: Bedrock at 2023 AWS re:Invent Las Vegas
 description: A look back at the 2023 edition of the Las Vegas AWS re:Invent
 author: [a_ferez, v_chabrier]

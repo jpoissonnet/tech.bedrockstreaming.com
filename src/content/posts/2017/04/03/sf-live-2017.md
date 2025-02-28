@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: "Symfony Live Paris 2017"
 description: "Symfony Live Paris 2017"
 author: [g_bouyge, f_desaintpern, b_viguier]

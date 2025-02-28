@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: Bedrock aux API Days Paris (2023)
 description: Nous étions aux API Days à Paris pour l'édition 2023 !
 author: [g_bouyge, j_hardeman, k_phan, n_alscher, o_thebault, o_weber, t_geindre]

@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: "M6Web Dev Facts #4"
 description: ""
 author: bedrock

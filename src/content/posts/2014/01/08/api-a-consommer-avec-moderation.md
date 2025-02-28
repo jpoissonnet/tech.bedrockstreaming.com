@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: "API à consommer avec modération"
 description: "Authentification des API par nom de domaine"
 author: team_cytron

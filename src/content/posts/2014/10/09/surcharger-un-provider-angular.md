@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: "Providers AngularJS et configuration dynamique"
 description: "Comment surcharger un provider AngularJS pour le rendre configurable dynamiquement."
 author: team_cytron

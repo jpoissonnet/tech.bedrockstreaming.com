@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: "Benchmarking WebSockets avec NodeJs"
 description: ""
 author: bedrock 

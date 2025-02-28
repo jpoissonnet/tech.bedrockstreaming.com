@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: "Use the Sensiolabs Security Checker to check potential vulnerabilities on Symfony projects"
 description: "Use the Sensiolabs Security Checker to check potential vulnerabilities on Symfony projects"
 author: TechM6Web

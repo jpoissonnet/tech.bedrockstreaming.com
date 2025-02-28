@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: "KubeCon 2018 Copenhagen, global review"
 description: "Our global review of KubeCon 2018 in Copenhagen"
 author: [v_gallissot, p_martin]

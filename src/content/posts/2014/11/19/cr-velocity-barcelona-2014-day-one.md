@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: "Retour sur la Velocity Barcelone - premier jour"
 description: ""
 author: [b_candellier, f_verron, o_mansour]

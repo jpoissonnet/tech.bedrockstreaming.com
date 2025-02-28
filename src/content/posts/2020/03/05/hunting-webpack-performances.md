@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: "How to boost the speed of your webpack build?"
 description: "A story of performance optimization and application of the Pareto principle to a webpack build that has become far too long."
 author: a_caron

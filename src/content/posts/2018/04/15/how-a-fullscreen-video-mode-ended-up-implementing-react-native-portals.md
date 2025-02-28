@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: "How a fullscreen video mode ended up implementing React Native Portals?"
 description: ""
 author: m_frachet

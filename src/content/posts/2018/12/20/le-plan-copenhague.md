@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: "Le Plan Copenhague : notre migration vers Le Cloud, retour d’expérience"
 description: "Comment nous avons migré la plateforme 6play vers Le Cloud, sur AWS et Kubernetes."
 author: p_martin

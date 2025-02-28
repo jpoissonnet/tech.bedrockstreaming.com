@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: "Migration to Spark 2.2"
 description: "Feedback from a migration to Spark 2.2"
 author: n_saby

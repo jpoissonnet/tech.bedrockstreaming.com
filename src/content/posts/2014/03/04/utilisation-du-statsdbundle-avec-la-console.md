@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: "Utilisation du StatsdBundle avec le composant Console"
 description: "Adaptation du StatsdBundle pour le composant Console de Symfony"
 author: team_cytron

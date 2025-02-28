@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: Bedrock à MiXiT Lyon (2023)
 description: Nous étions à MiXiT pour l'édition 2023 !
 author: al_deboissieu

@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: La gamification contre le legacy
 description: Retour d'expérience des équipes Infra de Bedrock sur la mise en place de journées dédiées au traitement des sujets legacy
 author: [e_perrin, a_ferez]

@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: "Forum PHP 2022 - L’éléphant bleu n’a pas peur de la souris aux grandes oreilles"
 description: "Nos retours du Forum PHP à Paris, les 13 et 14 octobre 2022"
 author: bedrock

@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: "M6 Web était présent au Forum PHP 2012"
 description: ""
 author: o_mansour 

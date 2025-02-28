@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: "Bedrock's backend architecture and its front API Gateway"
 description: "What is a BFF, and how does it simplify the development of frontend applications?"
 author: v_claras

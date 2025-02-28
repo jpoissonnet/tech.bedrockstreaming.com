@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: "Coke, pour bien sniffer son code"
 description: ""
 author: team_cytron

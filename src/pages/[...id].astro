@@ -9,7 +9,7 @@ const authors = await getCollection('authors');
 export async function getStaticPaths() {
     const postsEntries = await getCollection('posts');
     return postsEntries.map((entry) => ({
-        params: {slug: entry.slug}, props: {entry},
+        params: {slug: entry.id}, props: {entry},
     }));
 }
 

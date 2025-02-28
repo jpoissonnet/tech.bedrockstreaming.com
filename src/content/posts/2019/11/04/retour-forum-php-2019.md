@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: "Forum PHP Paris 2019"
 description: "Nos retours du Forum PHP à Paris, les 24 et 25 octobre 2019"
 author: p_martin

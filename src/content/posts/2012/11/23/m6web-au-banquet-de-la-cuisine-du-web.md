@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: "M6Web au banquet de la cuisine du web"
 description: ""
 author: o_mansour

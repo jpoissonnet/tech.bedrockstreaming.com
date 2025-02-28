@@ -1,5 +1,5 @@
 ---
-layout: ../../../../../layouts/post.astro
+
 title: "Introduction à la qualité logicielle avec Node.js"
 description: ""
 author: bedrock 
