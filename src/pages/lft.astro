@@ -3,6 +3,7 @@ import '../styles/global.css';
 import {getCollection} from "astro:content";
 import Header from '../components/Header.astro';
 import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
 import VideoCard from '../components/VideoCard.astro';
 import Meta from '../components/Meta.astro';
 
@@ -34,7 +35,7 @@ const lfts = (await getCollection('lfts')).toReversed();
         </section>
     </div>
 </main>
-
+<Footer/>
 <style>
     :root {
         --local-primary-color: var(--color-scarlet);

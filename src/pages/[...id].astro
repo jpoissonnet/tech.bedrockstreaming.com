@@ -4,12 +4,13 @@ import {getCollection, render} from "astro:content";
 import Authors from "../components/Authors.astro";
 import ImageOrImg from "../components/ImageOrImg.astro";
 import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
 import Meta from '../components/Meta.astro';
 const authors = await getCollection('authors');
 export async function getStaticPaths() {
     const postsEntries = await getCollection('posts');
     return postsEntries.map((entry) => ({
-        params: {slug: entry.id}, props: {entry},
+        params: {id: entry.id}, props: {entry},
     }));
 }
 
@@ -32,6 +33,7 @@ const {Content} = await render(entry);
         <main>
             <Content/>
         </main>
+    <Footer/>
     </body>
 </html>
 <style>

@@ -1,6 +1,9 @@
 ---
 import BedrockLogo from '../assets/images/bedrockLogo.png';
 import {Image} from "astro:assets"
+
+const pathname = new URL(Astro.request.url).pathname;
+const currentPath = pathname.slice(1); // remove the first "/"
 ---
 <div class="nav-wrapper">
     <a href="/">
@@ -37,19 +40,19 @@ import {Image} from "astro:assets"
     <nav class="desktop">
         <ul>
             <li>
-                <a href="/">Blog</a>
+                <a aria-current={currentPath === "" ? "page" : undefined} href="/">Blog</a>
             </li>
             <li>
-                <a href="/lft">LFTs</a>
+                <a aria-current={currentPath === "lft" ? "page" : undefined} href="/lft">LFTs</a>
             </li>
             <li>
-                <a href="/meetups">Meetups</a>
+                <a aria-current={currentPath === "meetups" ? "page" : undefined} href="/meetups">Meetups</a>
             </li>
             <li>
-                <a href="/oss">OSS</a>
+                <a aria-current={currentPath === "oss" ? "page" : undefined} href="/oss">OSS</a>
             </li>
             <li>
-                <a href="/search">Search</a>
+                <a aria-current={currentPath === "search" ? "page" : undefined} href="/search">Search</a>
             </li>
         </ul>
     </nav>
@@ -116,7 +119,6 @@ import {Image} from "astro:assets"
         font-weight: 500;
         position: relative;
 
-
         &:before {
             display: block;
             content: '';
@@ -130,7 +132,7 @@ import {Image} from "astro:assets"
             transition: all 150ms ease-in-out;
         }
 
-        &:hover:before {
+        &:hover:before, &[aria-current="page"]:before {
             transform: scaleX(1);
         }
     }

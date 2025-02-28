@@ -18,6 +18,9 @@ type AuthorType = CollectionEntry<"authors">;
             const authorData = allAuthors.find((a:any) => {
                 return a.id.toLowerCase() === author.id.toLowerCase();
             }) as AuthorType;
+            if(!authorData) {
+                return null;
+            }
             const authorUrl = authorData.data.url;
             if (authorUrl) {
                 return (

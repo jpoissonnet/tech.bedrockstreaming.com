@@ -1,0 +1,119 @@
+---
+import '../styles/global.css';
+import {getCollection} from "astro:content";
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+import Meta from '../components/Meta.astro';
+const posts = await getCollection('posts');
+
+const tags = posts.reduce((acc, post) => {
+    post.data.tags.forEach((tag) => {
+        if (!acc.includes(tag.toString().toLowerCase())) {
+            acc.push(tag.toString());
+        }
+    });
+    return acc;
+}, [] as Array<string>).sort(
+    (a, b) => a.localeCompare(b)
+);
+---
+
+<html lang="en">
+<Meta/>
+<body>
+<Navbar/>
+<main>
+    <section>
+    <header><h1>Tags</h1></header>
+        <ul class="tags-list">
+            {tags.map((tag) => (
+                <li>
+                    <a href={`/tags#${tag}`}>{tag}</a>
+                </li>
+            ))}
+        </ul>
+    </section>
+    <section>
+        {tags.map((tag) => (
+            <h2 id={tag}>{tag}</h2>
+            <ul class="post-list">
+                {posts.filter((post) => post.data.tags.includes(tag.toString())).map((post) => (
+                    <li>
+                        <a href={`/${post.id}`}>{post.data.title}</a>
+                    </li>
+                ))}
+            </ul>
+        ))}
+
+    </section>
+</main>
+<Footer/>
+</body>
+</html>
+
+<style>
+    header {
+        margin: 4rem 0;
+        h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            text-align: center;
+        }
+    }
+    section {
+        max-width: 1140px;
+        margin: 0 auto;
+
+        h2 {
+            font-size: 2rem;
+            font-weight: bold;
+            margin: 2rem 0;
+            text-transform: capitalize;
+
+            &:before {
+                content: '🏷️ ';
+            }
+        }
+    }
+    .tags-list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+
+        li {
+            a {
+                display: inline-block;
+                padding: 0.5rem 1rem;
+                white-space: nowrap;
+                background: #50F1D7;
+                border-radius: 15px;
+                text-transform: capitalize;
+            }
+        }
+    }
+
+    .post-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        a {
+            display: inline-block;
+            width: 100%;
+            padding: 1rem 0;
+            &:before {
+                content: '📝 ';
+            }
+        }
+
+        li {
+            border-bottom: 1px solid #f0f0f0;
+
+
+            &:hover {
+                background: #f0f0f0;
+            }
+        }
+    }
+</style>

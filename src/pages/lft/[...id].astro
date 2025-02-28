@@ -3,6 +3,7 @@ import '../../styles/global.css';
 import {getCollection, render} from "astro:content";
 import Header from '../../components/Header.astro';
 import Navbar from '../../components/Navbar.astro';
+import Footer from '../../components/Footer.astro';
 import Meta from '../../components/Meta.astro';
 
 const {entry} = Astro.props;
@@ -11,7 +12,7 @@ const {Content} = await render(entry);
 export async function getStaticPaths() {
     const lfts = await getCollection('lfts');
     return lfts.map((entry) => ({
-        params: {slug: entry.id}, props: {entry},
+        params: {id: entry.id}, props: {entry},
     }));
 }
 ---
@@ -31,6 +32,7 @@ export async function getStaticPaths() {
                         allowfullscreen></iframe>
             </article>
         </main>
+        <Footer/>
     </body>
 </html>
 
