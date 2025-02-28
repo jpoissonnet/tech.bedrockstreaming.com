@@ -52,65 +52,67 @@ const groupedConferences = sortedConferences.reduce(
         </p>
     </Header>
 
-    <section class="intro">
-        <p class="legend">⭐ sponsored by Bedrock 🏠 hosted by Bedrock</p>
-    </section>
+    <div class="container">
+        <section class="intro">
+            <p class="legend">⭐ sponsored by Bedrock 🏠 hosted by Bedrock</p>
+        </section>
 
-    <section class="conferences">
-        {Object.entries(groupedConferences)
-            .toReversed()
-            .map(([year, yearData]) => (
-                    <div class="year-group">
-                        <h2>{year}</h2>
-                        {Object.entries(yearData).map(([dateKey, dateData]) => (
-                                <div class="date-group">
-                                    {Object.entries(dateData).map(
-                                        ([eventKey, eventConferences]) => {
-                                            const firstConf = eventConferences[0];
-                                            return (
-                                                    <div class="event-group">
-                                                        <h3 class="event-header">
-                                                            {`${formatConferenceDate(dateKey)} : ${eventKey}`}
-                                                            {firstConf.data.sponsored && " ⭐️"}
-                                                            {firstConf.data.hosted && " 🏠"}
-                                                        </h3>
-                                                        {eventConferences.map((conference) => (
-                                                                <div class="conference-item">
-                                                                    <a href={conference.data.eventUrl}>
-                                                                        <h4>{conference.data.title}</h4>
-                                                                    </a>
-                                                                    <Authors
-                                                                            authors={conference.data.author}
-                                                                            allAuthors={authors}
-                                                                    />
-                                                                </div>
-                                                        ))}
-                                                    </div>
-                                            );
-                                        }
-                                    )}
-                                </div>
-                        ))}
-                    </div>
-            ))
-        }
-    </section>
-    <section class="replays">
-        <h2>Replays</h2>
-        <ul class="video-list">
-            {
-                conferences
-                    .filter(c => !!c.data.youtubeId)
-                    .map((conference) => (
-                            <li>
-                                <VideoCard url={`/meetups/${conference.id}`} title={conference.data.title}
-                                           src={`https://img.youtube.com/vi/${conference.data.youtubeId}/hqdefault.jpg`}
-                                           authors={conference.data.author}/>
-                            </li>
-                    ))
+        <section class="conferences">
+            {Object.entries(groupedConferences)
+                .toReversed()
+                .map(([year, yearData]) => (
+                        <div class="year-group">
+                            <h2>{year}</h2>
+                            {Object.entries(yearData).map(([dateKey, dateData]) => (
+                                    <div class="date-group">
+                                        {Object.entries(dateData).map(
+                                            ([eventKey, eventConferences]) => {
+                                                const firstConf = eventConferences[0];
+                                                return (
+                                                        <div class="event-group">
+                                                            <h3 class="event-header">
+                                                                {`${formatConferenceDate(dateKey)} : ${eventKey}`}
+                                                                {firstConf.data.sponsored && " ⭐️"}
+                                                                {firstConf.data.hosted && " 🏠"}
+                                                            </h3>
+                                                            {eventConferences.map((conference) => (
+                                                                    <div class="conference-item">
+                                                                        <a href={conference.data.eventUrl}>
+                                                                            <h4>{conference.data.title}</h4>
+                                                                        </a>
+                                                                        <Authors
+                                                                                authors={conference.data.author}
+                                                                                allAuthors={authors}
+                                                                        />
+                                                                    </div>
+                                                            ))}
+                                                        </div>
+                                                );
+                                            }
+                                        )}
+                                    </div>
+                            ))}
+                        </div>
+                ))
             }
-        </ul>
-    </section>
+        </section>
+        <section class="replays">
+            <h2>Replays</h2>
+            <ul class="video-list">
+                {
+                    conferences
+                        .filter(c => !!c.data.youtubeId)
+                        .map((conference) => (
+                                <li>
+                                    <VideoCard url={`/meetups/${conference.id}`} title={conference.data.title}
+                                               src={`https://img.youtube.com/vi/${conference.data.youtubeId}/hqdefault.jpg`}
+                                               authors={conference.data.author}/>
+                                </li>
+                        ))
+                }
+            </ul>
+        </section>
+    </div>
 </main>
 
 </body>
@@ -118,12 +120,6 @@ const groupedConferences = sortedConferences.reduce(
 <style>
     :root {
         --local-primary-color: var(--color-fuschia);
-    }
-
-    main {
-        max-width: 1140px;
-        margin: 0 auto;
-        padding: 0 15px;
     }
 
     .intro {

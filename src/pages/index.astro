@@ -22,35 +22,36 @@ const authors = await getCollection('authors');
         <h1>Welcome to the blog</h1>
         <p>Read about our streaming champions</p>
     </Header>
-    <section id="hero">
-        <div class="main-post">
-            <a class="img-holder" href={`/${posts[0].id}`}>
-                <ImageOrImg image={posts[0].data.thumbnail} alt={`${posts[0].data.title}`} loading="eager"/>
-            </a>
-            <div class="main-post-info">
-                <div class="upper-part">
-                    <span class="date">{format(posts[0].id.slice(0, 10), 'MMMM dd, yyyy')}</span>
-                    <hr/>
-                    <h2><a href={`/${posts[0].id}`}>{posts[0].data.title}</a></h2>
-                    <p>{posts[0].data.description}</p>
+    <div class="container">
+        <section id="hero">
+            <div class="main-post">
+                <a class="img-holder" href={`/${posts[0].id}`}>
+                    <ImageOrImg image={posts[0].data.thumbnail} alt={`${posts[0].data.title}`} loading="eager"/>
+                </a>
+                <div class="main-post-info">
+                    <div class="upper-part">
+                        <span class="date">{format(posts[0].id.slice(0, 10), 'MMMM dd, yyyy')}</span>
+                        <hr/>
+                        <h2><a href={`/${posts[0].id}`}>{posts[0].data.title}</a></h2>
+                        <p>{posts[0].data.description}</p>
+                    </div>
+                    <Authors authors={posts[0].data.author} allAuthors={authors}/>
                 </div>
-                <Authors authors={posts[0].data.author} allAuthors={authors}/>
             </div>
-        </div>
-        <Post post={posts[0]} authors={authors} class="displayOnMobileOnly"/>
-    </section>
-    <section class="recent-posts">
-        <h2>Recent Posts</h2>
-        <ul class="posts-list">
-            {posts.slice(1, 7).map((post) => (
-                    <Post post={post} authors={authors}/>
-            ))}
-        </ul>
-    </section>
-<section class="call-to-action">
-    <a href="/blog/2" class="cta-button">Read More Posts</a>
-</section>
-
+            <Post post={posts[0]} authors={authors} class="displayOnMobileOnly"/>
+        </section>
+        <section class="recent-posts">
+            <h2>Recent Posts</h2>
+            <ul class="posts-list">
+                {posts.slice(1, 7).map((post) => (
+                        <Post post={post} authors={authors}/>
+                ))}
+            </ul>
+        </section>
+        <section class="call-to-action">
+            <a href="/blog/2" class="cta-button">Read More Posts</a>
+        </section>
+    </div>
 </main>
 </body>
 </html>
@@ -61,9 +62,7 @@ const authors = await getCollection('authors');
     }
 
     main {
-        max-width: 1140px;
         margin: 0 auto;
-        padding: 0 15px;
     }
 
     #hero {

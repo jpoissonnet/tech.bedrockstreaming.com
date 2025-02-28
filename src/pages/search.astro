@@ -11,7 +11,7 @@ import Meta from "../components/Meta.astro";
     <Header>
         <h1>Search</h1>
     </Header>
-    <section>
+    <section class="container">
         <SearchComponent id="search"
                          uiOptions={{showImages: false, resetStyles: false, pageSize: 10, autofocus: true}}/>
     </section>
@@ -25,13 +25,6 @@ import Meta from "../components/Meta.astro";
         --pagefind-ui-border-radius: 40px;
         --pagefind-ui-font: 'Roboto', sans-serif;
     }
-
-    main {
-        max-width: 1140px;
-        margin: 0 auto;
-        padding: 0 15px;
-    }
-
 
     section {
         margin-top: -2rem;
